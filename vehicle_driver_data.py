@@ -93,6 +93,7 @@ def fetch_data(session, t_date, num_of_day, fleet_group_id):
         df = df.dropna(how="all")
 
         required_columns = [
+            "Unnamed: 0",
             "Unnamed: 1",
             "Unnamed: 3",
             "รหัส",
@@ -116,6 +117,7 @@ def fetch_data(session, t_date, num_of_day, fleet_group_id):
         df = df[required_columns]
 
         df = df.rename(columns={
+            "Unnamed: 0": "วันที่",
             "Unnamed: 1": "ฟลีท",
             "Unnamed: 3": "ลูกค้า",
             "ชื่อ": "แพล้นท์",
