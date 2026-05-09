@@ -14,7 +14,7 @@ MONGO_URI = os.getenv("MONGO_URI")
 PHPSESSID = os.getenv("PHPSESSID")
 
 DB_NAME = "atms"
-COLLECTION_NAME = "vehicle_daily"
+COLLECTION_NAME = "vehicle_daily_asia"
 
 URL = "https://www.mena-atms.com/report/print.out/print.excel/type/vehicle.daily.transaction"
 
